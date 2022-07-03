@@ -1,0 +1,16 @@
+<h1>Hello People. Welcome to ARC</h1>
+
+<table border="1">
+    <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+    </thead>
+    {% for indi in person %}
+        <tr>
+            <td>{{ indi.first_Name }}</td>
+            <td>{{ indi.last_Name }}</td>
+            <td>{{ indi.email }}</td>
+        </tr>
+    {% endfor %}
+</table>
